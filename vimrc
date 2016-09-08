@@ -7,5 +7,10 @@ execute pathogen#infect()
 
 syntax on
 filetype plugin indent on
-hi Normal ctermbg=none
+
+" Loading color scheme
 color happy_hacking
+
+
+" make background transparent in terminal
+hi Normal ctermbg=none
