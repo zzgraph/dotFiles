@@ -15,4 +15,4 @@ if [ -d $HOME/.vim ] && [ -d $HOME/.vim ]; then
 fi
 
 cp ./vimrc ~/.vimrc
-cp ./vim/ ~/.vim
+cp -r ./vim/ ~/.vim
