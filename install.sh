@@ -21,6 +21,17 @@ $HOME"/.dir_colors.back".$(date +%Y-%m-%d_%H:%M:%S);
 
     mv $HOME/.dir_colors $HOME/.dir_colors.back.$(date +%Y-%m-%d_%H:%M:%S);
 fi
-cp ..dir_colors ~/.dir_colors
-cp -r ./vim/ ~/.vim
+
+if [ -e $HOME/.bshrc ]; then
+    echo "Your previous vim configuration file "$HOME"/.bshrc \
+has been renamed to "\
+$HOME"/.bshrc.back".$(date +%Y-%m-%d_%H:%M:%S);
+    
+    mv $HOME/.bshrc $HOME/.bashrc.back.$(date +%Y-%m-%d_%H:%M:%S)
+fi
+
+
 ln -s ./LS_COLORS/LS_COLORS ~/.dir_colors
+ln -s ./vimrc $HOME/.vimrc
+ln -s ./vim/ $HOME/.vim
+ln -s ./bashrc $HOME/.bashrc
