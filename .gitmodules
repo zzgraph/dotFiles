@@ -10,3 +10,6 @@
 [submodule "LS_COLORS"]
 	path = LS_COLORS
 	url = https://github.com/trapd00r/LS_COLORS.git
+[submodule "vim/bundle/tender-colorscheme"]
+	path = vim/bundle/tender-colorscheme
+	url = https://github.com/jacoborus/tender.vim.git
