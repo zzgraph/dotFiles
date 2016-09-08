@@ -9,8 +9,14 @@ syntax on
 filetype plugin indent on
 
 " Loading color scheme
-color happy_hacking
+" color happy_hacking
+colorscheme gruvbox
 
-
+set background=dark
 " make background transparent in terminal
-hi Normal ctermbg=none
+" set &t_8f="\e[38;2;%ld;%ld;%ldm"
+" let &t_8b="\e[48;2;%ld;%ld;%ldm"
+" set termguicolors
+ hi Normal ctermbg=none
+
+" highlight NonText ctermbg=NONE guibg=NONE
