@@ -1,37 +1,21 @@
-if [ -e $HOME/.vimrc ]; then
-    echo "Your previous vim configuration file "$HOME"/.vimrc \
-has been renamed to "\
-$HOME"/.vimrc.back".$(date +%Y-%m-%d_%H:%M:%S);
-    
-    mv $HOME/.vimrc $HOME/.vimrc.back.$(date +%Y-%m-%d_%H:%M:%S)
-fi
+for configFile in {.bashrc,.vimrc,.dir_colors,.vim}; do
+if [ -h $HOME/$configFile ]; then
 
-if [ -d $HOME/.vim ] && [ -d $HOME/.vim ]; then
-    echo "Your previous vim configuration file "$HOME"/.vim \
-has bee renamed to "\
-$HOME"/.vim.back."$(date +%Y-%m-%d_%H:%M:%S);
-    
-    mv $HOME/.vim $HOME/.vim.back.$(date +%Y-%m-%d_%H:%M:%S);
-fi
+echo "Removing previously linked configuration files to create a new link";
+rm $HOME/$configFile;
 
-if [ -e $HOME/.dir_colors]; then
-    echo "Your previous vim configuration file "$HOME"/.dir_colors \
-has been renamed to "\
-$HOME"/.dir_colors.back".$(date +%Y-%m-%d_%H:%M:%S);
+elif [ -e $HOME/$configFile ] || [ -d $HOME/configFile ]; then
 
-    mv $HOME/.dir_colors $HOME/.dir_colors.back.$(date +%Y-%m-%d_%H:%M:%S);
-fi
+echo "Your previous vim configuration file "$HOME"/"$configFile \
+"has been renamed to "\
+$HOME"/"$configFile".back"$(date +%Y-%m-%d_%H:%M:%S);
+  
+mv $HOME/$configFile $HOME/$configFile.back.$(date +%Y-%m-%d_%H:%M:%S);
 
-if [ -e $HOME/.bshrc ]; then
-    echo "Your previous vim configuration file "$HOME"/.bshrc \
-has been renamed to "\
-$HOME"/.bshrc.back".$(date +%Y-%m-%d_%H:%M:%S);
-    
-    mv $HOME/.bshrc $HOME/.bashrc.back.$(date +%Y-%m-%d_%H:%M:%S)
-fi
+	fi;
+	done
 
-
-ln -s ./LS_COLORS/LS_COLORS ~/.dir_colors
-ln -s ./vimrc $HOME/.vimrc
-ln -s ./vim/ $HOME/.vim
-ln -s ./bashrc $HOME/.bashrc
+ln -s $PWD/LS_COLORS/LS_COLORS $HOME/.dir_colors
+ln -s $PWD/vimrc $HOME/.vimrc
+ln -s $PWD/vim/ $HOME/.vim
+ln -s $PWD/bashrc $HOME/.bashrc
