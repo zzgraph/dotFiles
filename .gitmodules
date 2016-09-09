@@ -34,15 +34,9 @@
 [submodule "vim/bundle/mlterm-syntax"]
 	path = vim/bundle/mlterm-syntax
 	url = https://github.com/mytoh/vim-mlterm.git
-[submodule "vim/bundle/airline"]
-	path = vim/bundle/airline
-	url = https://github.com/vim-airline/vim-airline.git
 [submodule "vim/bundle/fugitive"]
 	path = vim/bundle/fugitive
 	url = https://github.com/tpope/vim-fugitive.git
-[submodule "vim/bundle/airline-themes"]
-	path = vim/bundle/airline-themes
-	url = https://github.com/vim-airline/vim-airline-themes.git
 [submodule "vim/bundle/lightline"]
 	path = vim/bundle/lightline
 	url = https://github.com/itchyny/lightline.vim.git

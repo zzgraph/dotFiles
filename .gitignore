@@ -1,5 +1,5 @@
 *~
-#*#
+\#*#
 *.elc
 ac-comphist.dat
 auto-save-list/
@@ -25,3 +25,9 @@ oauth2.plstore
 cider-history
 sesseion*
 *.log
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+*~
