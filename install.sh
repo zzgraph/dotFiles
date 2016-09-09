@@ -1,4 +1,4 @@
-for configFile in {.bashrc,.vimrc,.dir_colors,.vim}; do
+for configFile in {.bashrc,.vimrc,.dir_colors,.vim,.bash_profile}; do
 if [ -h $HOME/$configFile ]; then
 
 echo "Removing previously linked configuration files to create a new link";
@@ -19,3 +19,4 @@ ln -s $PWD/LS_COLORS/LS_COLORS $HOME/.dir_colors
 ln -s $PWD/vimrc $HOME/.vimrc
 ln -s $PWD/vim/ $HOME/.vim
 ln -s $PWD/bashrc $HOME/.bashrc
+ln -s $PWD/bash_profile $HOME/.bash_profile
