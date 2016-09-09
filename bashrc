@@ -1,4 +1,4 @@
 ##
 
 # loading dir_colors
-eval $(dircolors -b $HOME/.dircolors);
+eval $(dircolors -b $HOME/.dir_colors);
