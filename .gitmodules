@@ -37,3 +37,6 @@
 [submodule "vim/bundle/mlterm-syntax"]
 	path = vim/bundle/mlterm-syntax
 	url = https://github.com/mytoh/vim-mlterm.git
+[submodule "vim/bundle/airline"]
+	path = vim/bundle/airline
+	url = https://github.com/vim-airline/vim-airline.git
