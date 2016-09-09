@@ -31,9 +31,6 @@
 [submodule "vim/bundle/vorange"]
 	path = vim/bundle/vorange
 	url = https://github.com/Marfisc/vorange.git
-[submodule "vim/bundle/seiya"]
-	path = vim/bundle/seiya
-	url = https://github.com/miyakogi/seiya.vim.git
 [submodule "vim/bundle/mlterm-syntax"]
 	path = vim/bundle/mlterm-syntax
 	url = https://github.com/mytoh/vim-mlterm.git
