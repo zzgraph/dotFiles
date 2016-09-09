@@ -28,3 +28,6 @@
 [submodule "vim/bundle/solarized8"]
 	path = vim/bundle/solarized8
 	url = https://github.com/lifepillar/vim-solarized8.git
+[submodule "vim/bundle/vorange"]
+	path = vim/bundle/vorange
+	url = https://github.com/Marfisc/vorange.git
