@@ -8,3 +8,8 @@ changes.
 * Adding dotEmacs as git submodule and push the project to remote github repository
   - it's necessary to add emacs install script to current dotFiles install script
   - 
+* Adding git-config file to configuration files
+
+* Adding a gnome-terminal automatic gruvbox color script
+
+*
