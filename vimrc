@@ -26,8 +26,8 @@ colorscheme gruvbox
 " colorscheme PaperColor
 " colorscheme jellybeans
 " colorscheme wombat256mod
-" hi Normal guibg=NONE ctermbg=NONE
-" hi NonText ctermbg=none
+" highlight Normal ctermbg=NONE
+hi NonText ctermbg=NONE guibg=NONE
 " hi LineNr ctermbg=none
 
 " make background transparent in terminal
@@ -104,3 +104,4 @@ set nofoldenable
 python3 from powerline.vim import setup as powerline_setup
 python3 powerline_setup()
 python3 del powerline_setup
+" autocmd VimEnter * hi Normal guibg=NONE ctermbg=NONE guisp=NONE

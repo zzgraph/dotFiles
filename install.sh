@@ -1,22 +1,36 @@
-for configFile in {.bashrc,.vimrc,.dir_colors,.vim,.bash_profile}; do
-if [ -h $HOME/$configFile ]; then
+declare -a configFiles=(
+"bashrc"
+"vimrc"
+"dir_colors"
+"vim"
+"bash_profile"
+"bashrc.d"
+)
 
-echo "Removing previously linked configuration files to create a new link";
-rm $HOME/$configFile;
 
-elif [ -e $HOME/$configFile ] || [ -d $HOME/configFile ]; then
 
-echo "Your previous vim configuration file "$HOME"/"$configFile \
-"has been renamed to "\
-$HOME"/"$configFile".back"$(date +%Y-%m-%d_%H:%M:%S);
-  
-mv $HOME/$configFile $HOME/$configFile.back.$(date +%Y-%m-%d_%H:%M:%S);
+for j in ${!configFiles[*]}; do
+    if [ -h $HOME/.${configFiles[$j]} ]; then
+        echo "Moving previously linked configuration files to $HOME/rcfiles.backup and create a new link";
+        if [ ! -d $HOME/.rcfiles.backup ]; then
+            mkdir $HOME/.rcfiles.backup;
+        fi
+        mv $HOME/.${configFiles[$j]} $HOME/.rcfiles.backup/${configFiles[$j]}.back.$(date +%Y-%m-%d_%H:%M:%S);
 
-	fi;
-	done
+    elif [ -e $HOME/.${configFiles[$j]} ] || [ -d $HOME/.${configFiles[$j]} ]; then
 
-ln -s $PWD/LS_COLORS/LS_COLORS $HOME/.dir_colors
-ln -s $PWD/vimrc $HOME/.vimrc
-ln -s $PWD/vim/ $HOME/.vim
-ln -s $PWD/bashrc $HOME/.bashrc
-ln -s $PWD/bash_profile $HOME/.bash_profile
+        echo "Your previous configuration file $HOME/.${configFiles[$j]}";
+        echo "has been renamed to $HOME/${configFiles[$j]}.back$(date +%Y-%m-%d_%H:%M:%S)";
+
+        if [ ! -d $HOME/.rcfiles.backup ]; then
+            mkdir $HOME/.rcfiles.backup;
+        fi
+        mv $HOME/.${configFiles[$j]} $HOME/.rcfiles.backup/${configFiles[$j]}.back.$(date +%Y-%m-%d_%H:%M:%S);
+
+    fi;
+done
+
+for i in ${!configFiles[*]}; do
+    echo "Linking new configuration file ${configFiles[$i]} to your home directory";
+    ln -s $PWD/${configFiles[$i]} $HOME/.${configFiles[$i]};
+done

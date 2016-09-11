@@ -16,6 +16,7 @@ declare -a rcFiles=(
                     "$localRCDirectory/aliases"
                     "$localRCDirectory/functions"
                     "$localRCDirectory/paths"
+                    "/etc/profile"
                     "$localRCDirectory/prompt"
                     )
 
