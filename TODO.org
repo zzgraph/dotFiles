@@ -1,2 +1,10 @@
+#+TITLE: dotFiles todo list
+
 * Changing paths inside the configurations during installation
-relative paths in cofiguration files mau need to be updated at installation.  for example vim folder in repo is going to be moved to ~/.vim, thus the relative path needs to be updated to reflect these changes.
+relative paths in cofiguration files mau need to be updated at
+installation.  for example vim folder in repo is going to be moved to
+~/.vim, thus the relative path needs to be updated to reflect these
+changes.
+* Adding dotEmacs as git submodule and push the project to remote github repository
+  - it's necessary to add emacs install script to current dotFiles install script
+  - 

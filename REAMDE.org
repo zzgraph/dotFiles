@@ -1,0 +1,7 @@
+* Installation
+
+run command
+
+#+BEGIN_SRC sh
+sh install.sh
+#+END_SRC
