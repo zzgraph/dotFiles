@@ -1,3 +1,7 @@
+* dotFiles
+
+My configuration files for vim, bash, mlterm.
+
 * Installation
 
 Clone repository by running this command
