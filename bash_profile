@@ -5,8 +5,12 @@
 
 if [[ $COLORTERM == gnome-* && $TERM == xterm ]] && infocmp gnome-256color >/dev/null 2>&1; then
     export TERM=gnome-256color;
-elif infocmp xterm-256color >/dev/null 2>&1; then
+elif [[ ! $COORTERM == gnome-* && $TERM == xterm ]] && infocmp xterm-256color >/dev/null 2>&1; then
     export TERM=xterm-256color;
+elif [[ $TERM == eterm-color ]] && infocmp eterm-color >/dev/null 2>&1; then
+    export TERM=eterm-color;
+else
+    export TERM=$TERM
 fi;
 
 # Loading neseccery RC files from ~/.bashrc.d directory
