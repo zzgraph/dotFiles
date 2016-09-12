@@ -1,7 +1,30 @@
 #!/usr/bin/env bash
+
+## Using vim with system clipboard if available
+
 if [ -x /usr/bin/vimx ]; then
-	alias vim=vimx;
+    alias vim=vimx;
 fi
+
+## Change directory
+
 alias ..="cd .."
 alias 2..="cd ../.."
 alias 3..="cd ../../.."
+
+## Managing Services with systemctl
+
+# System services
+
+alias systart="sudo systemctl start"
+alias systop="sudo systemctl stop"
+alias sysre="sudo systemctl restart"
+alias systat="sudo systemctl status"
+
+# User services
+
+alias usystart="systemctl --user start"
+alias usystop="systemctl --user stop"
+alias usysre="systemctl --user restart"
+alias usystat="systemctl --user status"
+
