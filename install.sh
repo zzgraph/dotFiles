@@ -6,6 +6,7 @@ declare -a configFiles=(
     "bash_profile"
     "bashrc.d"
     "mlterm"
+    "gitconfig"
 )
 declare -a noDotConfig=(
     "bin"
