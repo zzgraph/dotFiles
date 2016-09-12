@@ -5,6 +5,7 @@ declare -a configFiles=(
 "vim"
 "bash_profile"
 "bashrc.d"
+"mlterm"
 )
 
 
