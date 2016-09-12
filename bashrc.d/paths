@@ -1,4 +1,5 @@
 PATH=$HOME/bin:$PATH;
+export PATH
 
 # Local Variables:
 # mode: sh
