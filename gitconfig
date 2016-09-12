@@ -1,0 +1,22 @@
+[user]
+	email = shahab.shahsavari@outlook.com
+	name = Shahab Shahsabvari Alavidjeh
+[push]
+	default = simple
+[core]
+	editor = "emacsclient -a \"\""
+[color]
+	ui = auto
+[alias]
+	co = checkout
+	c = commit
+	cm = commit -m
+	cam = commit -a -m
+	st = status
+	ca = commit -a
+	sl = add --all
+	s = add
+[diff]
+	tool = emerge
+[merge]	
+	tool = emerge
