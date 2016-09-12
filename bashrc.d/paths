@@ -1,6 +1,15 @@
 PATH=$HOME/bin:$PATH;
 export PATH
 
+if [ -x $HOME/bin/emc ]; then
+    EDITOR=emc;
+else
+    EDITOR="emacsclient -a \"\""
+fi
+export EDITOR
+VISUAL=EDITOR
+export VISUAL
+
 # Local Variables:
 # mode: sh
 # End:
