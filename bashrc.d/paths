@@ -7,7 +7,7 @@ else
     EDITOR="emacsclient -a \"\""
 fi
 export EDITOR
-VISUAL=EDITOR
+VISUAL=$EDITOR
 export VISUAL
 
 # Local Variables:
