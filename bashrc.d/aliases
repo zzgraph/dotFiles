@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-if [ -x $(which vimx) ]; then
-alias vim=vimx;
+if [ -x /usr/bin/vimx ]; then
+	alias vim=vimx;
 fi
 alias ..="cd .."
 alias 2..="cd ../.."
