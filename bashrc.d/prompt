@@ -54,13 +54,20 @@ else
 	hostStyle="${yellow}";
 fi;
 
+case $TERM in
+    xterm*|gnome-*|screen*|xrvt*|mlterm*)
+	TITLE_BAR="\[\033]0;\w\007\]";;
+    *)
+	TITLE_BAR="";;
+esac
 
+	
 GIT_PS1_SHOWDIRTYSTATE=1;
 GIT_PS1_SHOWUNTRACKEDFILES=1;
 GIT_PS1_SHOWCOLORHINTS=1;
 GIT_PS1_SHWSTASHSTATE=1;
 PROMPT_COMMAND='__git_ps1 \
-"\[\033]0;\w\007\]\[${bold}\]\n\[${reset}\]\[${userStyle}\]\u \
+"$TITLE_BAR\[${bold}\]\n\[${reset}\]\[${userStyle}\]\u \
 \[${white}\]@ \[${hostStyle}\]\h \[${white}\]: \[${cyan}\]\w\
 \[${reset}\]" "\n\[${white}\]$promptChar \[${reset}\]"';
 
@@ -73,7 +80,7 @@ export PROMPT_COMMAND;
 #PS1+="\[${hostStyle}\]\h ";
 #PS1+="\[${white}\]: ";
 #PS1+="\[${green}\]\w\[${reset}\]";
-#PS1+='$(__git_ps1 "" "")';
+#PS1+='$(__git_ps1 "[%s]")';
 #PS1+="\n";
 #PS1+="\[${white}\]  $promptChar\[${reset}\]";
 #export PS1;
