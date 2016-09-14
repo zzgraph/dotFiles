@@ -40,3 +40,9 @@
 [submodule "vim/bundle/commentary"]
 	path = vim/bundle/commentary
 	url = https://github.com/tpope/vim-commentary.git
+[submodule "vim/bundle/lightline"]
+	path = vim/bundle/lightline
+	url = https://github.com/itchyny/lightline.vim.git
+[submodule "vim/bundle/lightline-gruvbox"]
+	path = vim/bundle/lightline-gruvbox
+	url = https://github.com/shinchu/lightline-gruvbox.vim.git
