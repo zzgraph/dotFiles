@@ -55,7 +55,7 @@ else
 fi;
 
 case $TERM in
-    xterm*|gnome-*|screen*|xrvt*|mlterm*)
+    xterm*|gnome-*|screen*|xrvt*|mlterm*|tmux*)
 	TITLE_BAR="\[\033]0;\w\007\]";;
     *)
 	TITLE_BAR="";;
