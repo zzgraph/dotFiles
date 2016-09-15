@@ -58,6 +58,3 @@ if [ -z "$LESSOPEN" ] && [ -x /usr/bin/lesspipe.sh ]; then
     # The '||' here is intentional, see rhbz#1254837.
     export LESSOPEN="||/usr/bin/lesspipe.sh %s"
 fi
-if ! grep --color 2>&1 | grep option > /dev/null ; then
-    alias grep='grep --color=auto --exclude=".*.swp" --exclude="*~"';
-fi
