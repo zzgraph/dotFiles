@@ -8,30 +8,23 @@ execute pathogen#infect()
 "
 set background=dark
 " set background=light
-set termguicolors   "using truecolor by default
-
-" colorscheme zenburn
-" colorscheme vorange
-" colorscheme solarized8_dark
-" colorscheme solarized8_light
-" colorscheme solarized8_dark_flat
-" colorscheme solarized8_light_flat
-" colorscheme solarized8_dark_high
-" colorscheme solarized8_light_high
-" colorscheme solarized8_dark_low
-" colorscheme solarized8_light_low
-" colorscheme happy_hacking
+if &term =~ "screen*" || &term =~ "tmux*"
+     " set termguicolors
+     " set t_Co=256
+else
+     set termguicolors   "using truecolor by default
+endif
 colorscheme gruvbox
-" colorscheme tender
-" colorscheme PaperColor
-" colorscheme jellybeans
-" colorscheme wombat256mod
-" highlight Normal ctermbg=NONE
-hi NonText ctermbg=NONE guibg=NONE
-" hi LineNr ctermbg=none
+autocmd VimEnter * hi Normal guibg=NONE ctermbg=NONE guisp=NONE
 
-" make background transparent in terminal
-" hi clear
+" vim-lightline specific configurations
+let g:lightline = {
+      \ 'colorscheme': 'gruvbox',
+      \ 'component': {
+      \   'readonly': '%{&readonly?"RO":""}',
+      \ }
+      \ }
+
 
 
 " Automatic syntax highligting and filetype detection
@@ -100,8 +93,3 @@ set softtabstop=4              " a soft-tab of four spaces
 "
 set nofoldenable 
 
-" vim-lightline specific configurations
-python3 from powerline.vim import setup as powerline_setup
-python3 powerline_setup()
-python3 del powerline_setup
-" autocmd VimEnter * hi Normal guibg=NONE ctermbg=NONE guisp=NONE
