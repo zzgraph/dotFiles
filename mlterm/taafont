@@ -1,0 +1,43 @@
+DEFAULT=Vazir Code
+
+ISO8859_1=DejaVu Sans Mono
+ISO8859_2=DejaVu Sans Mono
+ISO8859_3=DejaVu Sans Mono
+ISO8859_4=DejaVu Sans Mono
+ISO8859_5=DejaVu Sans Mono
+ISO8859_7=DejaVu Sans Mono
+ISO8859_9=DejaVu Sans Mono
+ISO8859_10=DejaVu Sans Mono
+ISO8859_13=DejaVu Sans Mono
+ISO8859_14=DejaVu Sans Mono
+ISO8859_15=DejaVu Sans Mono
+KOI8_R=DejaVu LGC Sans Mono
+KOI8_U=DejaVu LGC Sans Mono
+JISX0208_1978=Noto Sans CJK JP
+JISX0208_1983=Noto Sans CJK JP
+JISX0208_1990=Noto Sans CJK JP
+KSX1001_1997=Noto Sans CJK KR
+BIG5=Noto Sans CJK TC
+GB2312_80=Noto Sans CJK JP
+GBK=Noto Sans CJK SC
+
+ISO10646_UCS4_1=DejaVu Sans Mono
+#ISO10646_UCS4_1=Thryomanes
+
+# Japanese speakers may want to enable the following setting.
+ISO10646_UCS4_1_FULLWIDTH=Noto Sans CJK JP
+# Unicode Hankaku kana.
+U+FF61-FF9F=Noto Sans CJK JP
+
+# Korean speakers may want to enable the following setting.
+ISO10646_UCS4_1_FULLWIDTH=Noto Sans CJK KR
+
+# Traditional Chinese speakers may want to enable the following setting.
+ISO10646_UCS4_1_FULLWIDTH=Noto Sans CJK TC
+
+# Simplified Chinese speakers may want to enable the following setting.
+ISO10646_UCS4_1_FULLWIDTH=Noto Sans CJK SC
+
+# For powerline.
+U+E000-E0FF = PowerlineSymbols
+U+1F000-1F77F = Symbola
