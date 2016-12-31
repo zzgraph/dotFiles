@@ -1,6 +1,8 @@
 [user]
 	email = shahab.shahsavari@outlook.com
 	name = Shahab Shahsabvari Alavidjeh
+[credential "https://github.com"]
+	username = zzgraph
 [push]
 	default = simple
 [core]
