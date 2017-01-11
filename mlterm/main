@@ -46,9 +46,10 @@ termtype = xterm-256color
 #  ISO-2022-CN, HZ, EUC-TW, BIG5, BIG5HKSCS, UTF-8, AUTO)
 ENCODING = UTF-8
 
-# use_ctl = true
+use_ctl = true
 
 # (normal,left,right)
+
 bidi_mode = normal
 
 # bidi_separators =
@@ -80,7 +81,7 @@ use_combining = true
 # console_encoding = auto
 
 # -- Font --
-fontsize = 14
+fontsize = 16
 
 font_size_range = 6-30
 
@@ -100,7 +101,7 @@ use_anti_alias = true
 
 # unicode_noconv_areas =
 
-# only_use_unicode_font = false
+only_use_unicode_font = true
 
 # iso88591_font_for_usascii = false
 
@@ -116,7 +117,7 @@ use_anti_alias = true
 
 # unicode_full_width_areas =
 
-# use_ot_layout = false
+use_ot_layout = true
 
 # ot_script = latn
 
@@ -125,7 +126,7 @@ use_anti_alias = true
 # -- Appearance --
 # use_transbg = true
 
-alpha = 240
+# alpha = 240
 
 # (8,16,24,32)
 depth = 32
@@ -187,7 +188,7 @@ blink_cursor = true
 # use_xim = true
   
 # (xim,uim,scim,m17n-lib,ibus,none)
-# input_method = xim
+input_method = none
 
 # tabsize = 8
 

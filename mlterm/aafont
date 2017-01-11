@@ -1,16 +1,17 @@
-DEFAULT=Vazir Code
+DEFAULT = "Vazir Code"
+UNICODE = Vazir Code
 
-ISO8859_1=DejaVu Sans Mono
-ISO8859_2=DejaVu Sans Mono
-ISO8859_3=DejaVu Sans Mono
-ISO8859_4=DejaVu Sans Mono
-ISO8859_5=DejaVu Sans Mono
-ISO8859_7=DejaVu Sans Mono
-ISO8859_9=DejaVu Sans Mono
-ISO8859_10=DejaVu Sans Mono
-ISO8859_13=DejaVu Sans Mono
-ISO8859_14=DejaVu Sans Mono
-ISO8859_15=DejaVu Sans Mono
+ISO8859_1 = "Vazir Code"
+ISO8859_2 = "Vazir Code"
+ISO8859_3 = "Vazir Code"
+ISO8859_4 = "Vazir Code"
+ISO8859_5 = "Vazir Code"
+ISO8859_7 = "Vazir Code"
+ISO8859_9 = "Vazir Code"
+ISO8859_10 = "Vazir Code"
+ISO8859_13 = "Vazir Code"
+ISO8859_14 = "Vazir Code"
+ISO8859_15 = "Vazir Code"
 KOI8_R=DejaVu LGC Sans Mono
 KOI8_U=DejaVu LGC Sans Mono
 JISX0208_1978=Noto Sans CJK JP
@@ -21,7 +22,7 @@ BIG5=Noto Sans CJK TC
 GB2312_80=Noto Sans CJK JP
 GBK=Noto Sans CJK SC
 
-ISO10646_UCS4_1=DejaVu Sans Mono
+ISO10646_UCS4_1 = "Vazir Code"
 #ISO10646_UCS4_1=Thryomanes
 
 # Japanese speakers may want to enable the following setting.
