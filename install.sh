@@ -66,3 +66,8 @@ for i in ${!noDotConfig[*]}; do
     echo "Linking new configuration file ${noDotConfig[$i]} to your home directory";
     ln -s $PWD/${noDotConfig[$i]} $HOME/${noDotConfig[$i]};
 done
+
+# check if platform is Cygwin and install .minttyrc
+if [ $(uname -o)==Cygwin ]; then
+    ln -s $PWD/minttyrc $HOME/.minttyrc
+fi
