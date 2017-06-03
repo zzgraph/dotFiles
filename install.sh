@@ -7,7 +7,7 @@ declare -a configFiles=(
     "bashrc.d"
     "mlterm"
     "gitconfig"
-    "tmux.confin"
+    "tmux.conf"
 )
 declare -a noDotConfig=(
     "bin"

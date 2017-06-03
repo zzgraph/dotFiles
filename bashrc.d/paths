@@ -1,4 +1,4 @@
-PATH=$HOME/bin:$PATH;
+PATH=$HOME/bin:$HOME/.cabal.bin:$PATH;
 export PATH
 
 if [ -x $HOME/bin/emc ]; then

@@ -126,7 +126,7 @@ use_ot_layout = true
 # -- Appearance --
 # use_transbg = true
 
-# alpha = 240
+alpha = 225
 
 # (8,16,24,32)
 depth = 32
