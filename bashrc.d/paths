@@ -1,5 +1,7 @@
-PATH=$HOME/bin:$HOME/.cabal.bin:$PATH;
+PATH=$HOME/bin:$HOME/.cabal/bin:$HOME/go/bin:$PATH;
 export PATH
+GOPATH=$HOME/go;
+export GOPATH
 
 if [ -x $HOME/bin/emc ]; then
     EDITOR=emc;
