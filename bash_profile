@@ -22,6 +22,8 @@ declare -a rcFiles=(
                     "$localRCDirectory/paths"
                     # "/etc/profile"
                     "$localRCDirectory/prompt"
+                    "$localRCDirectory/npmCompletion"
+		    "$localRCDirectory/ngCompletion"
                     )
 
 for i in ${!rcFiles[*]}; do
