@@ -32,6 +32,9 @@ for i in ${!rcFiles[*]}; do
     fi;
 done;
 
+# initializing fasd https://github.com/clvv/fasd
+eval "$(fasd --init auto)"
+
 eval $(dircolors -b $HOME/.dir_colors)
 
 # Check for interactive bash and that we haven't already been sourced.
