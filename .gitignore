@@ -1,6 +1,6 @@
 *~
 \#*#
-\.#*
+.\#*
 *.elc
 ac-comphist.dat
 auto-save-list/
@@ -31,5 +31,4 @@ sesseion*
 *.un~
 Session.vim
 .netrwhist
-*~
 challenge
