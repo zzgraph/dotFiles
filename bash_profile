@@ -8,10 +8,16 @@ if [[ $COLORTERM == gnome-* && $TERM == xterm ]] && infocmp gnome-256color >/dev
 #elif [[ ! $COLORTERM == gnome-* && $TERM == xterm ]] && infocmp xterm-256color >/dev/null 2>&1; then
     #    export TERM=xterm-256color;
 elif [[ $TERM == eterm-color ]] && infocmp eterm-color >/dev/null 2>&1; then
-    export TERM=eterm-color;
+    export TERM=eterm;
 else
     export TERM=$TERM
 fi;
+
+# NVM Specific configurations https://github.com/creationix/nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
 
 # Loading neseccery RC files from ~/.bashrc.d directory
 localRCDirectory=$HOME/.bashrc.d;
@@ -46,8 +52,11 @@ if [ -n "${BASH_VERSION-}" -a -n "${PS1-}" -a -z "${BASH_COMPLETION_COMPAT_DIR-}
         [ -r "${XDG_CONFIG_HOME:-$HOME/.config}/bash_completion" ] && \
             . "${XDG_CONFIG_HOME:-$HOME/.config}/bash_completion"
         if shopt -q progcomp && [ -r /usr/share/bash-completion/bash_completion ]; then
+	    if [[ ( -z "$INSIDE_EMACS" || "$EMACS_BASH_COMPLETE" = "t" ) &&\
+     -f /usr/share/bash-completion/bash_completion ]]; then
             # Source completion code.
-            . /usr/share/bash-completion/bash_completion
+		. /usr/share/bash-completion/bash_completion
+	    fi
         fi
     fi
 
