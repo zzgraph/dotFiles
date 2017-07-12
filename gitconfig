@@ -5,8 +5,11 @@
 	username = zzgraph
 [push]
 	default = simple
+	autocrlf = true
 [core]
 	editor = "emacsclient -a \"\""
+	excludesfile = /home/shibi/.gitignore_global
+
 [color]
 	ui = auto
 [alias]
