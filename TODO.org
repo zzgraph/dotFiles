@@ -1,15 +1,15 @@
 #+TITLE: dotFiles todo list
 
-* Changing paths inside the configurations during installation
-relative paths in cofiguration files mau need to be updated at
-installation.  for example vim folder in repo is going to be moved to
-~/.vim, thus the relative path needs to be updated to reflect these
-changes.
 * Adding dotEmacs as git submodule and push the project to remote github repository
   - it's necessary to add emacs install script to current dotFiles install script
-  - 
-* Adding git-config file to configuration files
+* TODO Missing configurations [0/9]
+  - [ ] i3 configuration files ( and .xprofile)
+  - [ ] stylelintrc
+  - [ ] Adding airbnb eslint configurations as submodule
+  - [ ] Adding script to automatically create a working directory for nodejs java script project (creating term-project, running npm init, copy eslintrc etc. )
+  - [ ] adding rtorrentrc
+  - [ ] adding dunst rcfiles
+  - [ ] adding rofi rcfile
+  - [ ] compton.conf, w3m, ranger
+  - [ ] .keysnail and conkerorrc
 
-* Adding a gnome-terminal automatic gruvbox color script
-
-*
