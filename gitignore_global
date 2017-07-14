@@ -1,8 +1,16 @@
+# Emacs spesific files
 *~
 \#*\#
+*.elc
+.dir-locals.el
 
+#Node specific files
 node_modules/
 
+# Tern files
 .tern-project
 
-*.elc
+
+# Local Variables:
+# mode: gitignore
+# End:
