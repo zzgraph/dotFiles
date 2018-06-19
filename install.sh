@@ -186,15 +186,18 @@ for vim in ${vimBundle[@]}; do
     declare bundleFiles2=($(ls $PWD/vim/bundle/$vim/doc 2>/dev/null));
     declare bundleFiles3=($(ls $PWD/vim/bundle/$vim/colors 2>/dev/null));
     declare bundleFiles4=($(ls $PWD/vim/bundle/$vim/autoload 2>/dev/null));
+    declare bundleFiles5=($(ls $PWD/vim/bundle/$vim/test 2>/dev/null));
 
     if [[ -n $bundleFiles1 ]]; then
 	checkInstallConfig bundleFiles1 "vim/bundle/$vim/plugin" ".vim/bundle/$vim/plugin" "false" "false";
     elif [[ -n $bundleFiles2 ]]; then
 	checkInstallConfig bundleFiles2 "vim/bundle/$vim/doc" ".vim/bundle/$vim/doc" "false" "false";
     elif [[ -n $bundleFiles3 ]]; then
-	checkInstallConfig bundleFiles3 "vim/bundle/$vim/colors" ".vim/bundle/$vim/color" "false" "false";
+	checkInstallConfig bundleFiles3 "vim/bundle/$vim/colors" ".vim/bundle/$vim/colors" "false" "false";
     elif [[ -n $bundleFiles4 ]]; then
-	checkInstallConfig bundleFiles4 "vim/bundle/$vim/autoload" ".vim/bundle/$vim/color" "false" "false";
+	checkInstallConfig bundleFiles4 "vim/bundle/$vim/autoload" ".vim/bundle/$vim/autoload" "false" "false";
+    elif [[ -n $bundleFiles5 ]]; then
+	checkInstallConfig bundleFiles5 "vim/bundle/$vim/test" ".vim/bundle/$vim/test" "false" "false";
     fi
 done
 
