@@ -8,9 +8,9 @@
 
 geometry = 160x30+40+20
 
-# app_name = mlterm
+app_name = mlterm
   
-# title = mlterm
+title = mlterm
   
 icon_name = mlterm
 
