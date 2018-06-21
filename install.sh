@@ -110,10 +110,10 @@ function checkInstallConfig () {
 # install in home folder
 
 declare -a configFiles=(
-    "bashrc"
+    #"bashrc"
     "vimrc"
     "dir_colors"
-    "bash_profile"
+    #"bash_profile"
     "gitconfig"
     "tmux.conf"
     "gitignore_global"
@@ -190,13 +190,21 @@ for vim in ${vimBundle[@]}; do
 
     if [[ -n $bundleFiles1 ]]; then
 	checkInstallConfig bundleFiles1 "vim/bundle/$vim/plugin" ".vim/bundle/$vim/plugin" "false" "false";
-    elif [[ -n $bundleFiles2 ]]; then
+    fi
+    
+    if [[ -n $bundleFiles2 ]]; then
 	checkInstallConfig bundleFiles2 "vim/bundle/$vim/doc" ".vim/bundle/$vim/doc" "false" "false";
-    elif [[ -n $bundleFiles3 ]]; then
+    fi
+    
+    if [[ -n $bundleFiles3 ]]; then
 	checkInstallConfig bundleFiles3 "vim/bundle/$vim/colors" ".vim/bundle/$vim/colors" "false" "false";
-    elif [[ -n $bundleFiles4 ]]; then
+    fi
+    
+    if [[ -n $bundleFiles4 ]]; then
 	checkInstallConfig bundleFiles4 "vim/bundle/$vim/autoload" ".vim/bundle/$vim/autoload" "false" "false";
-    elif [[ -n $bundleFiles5 ]]; then
+    fi
+    
+    if [[ -n $bundleFiles5 ]]; then
 	checkInstallConfig bundleFiles5 "vim/bundle/$vim/test" ".vim/bundle/$vim/test" "false" "false";
     fi
 done
