@@ -8,7 +8,7 @@
 	autocrlf = true
 [core]
 	editor = "emacsclient -a \"\""
-	excludesfile = /home/shibi/.gitignore_global
+	excludesfile = $HOME/.config/git/gitignore_global
 
 [color]
 	ui = auto
